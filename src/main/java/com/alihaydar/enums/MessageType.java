@@ -2,10 +2,17 @@ package com.alihaydar.enums;
 
 import java.security.PrivateKey;
 
+import lombok.Getter;
+
+
+@Getter
 public enum MessageType {
 
 	NO_RECORD_EXCIST("400","No Record Founded"),
-	GENERAL_EXCEPTION("404","General Exception");
+	EXPIRED_JWT_EXCEPTON("1000", "Token expired"),
+	GENERAL_EXCEPTION("404","General Exception"),
+	REFRESH_TOKEN_IS_NOT_FOUNDED("1001","Refresh token bulunamadı"),
+	REFRESH_TOKEN_EXPIRED("1002","REFREH TOKEN EXPIRED");
 	
 	
 	private String code;
