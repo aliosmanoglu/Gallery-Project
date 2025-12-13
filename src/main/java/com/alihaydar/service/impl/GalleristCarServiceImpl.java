@@ -5,6 +5,7 @@ import java.util.Optional;
 
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.alihaydar.dto.DtoCar;
 import com.alihaydar.dto.DtoGallerist;
@@ -21,6 +22,8 @@ import com.alihaydar.repository.GalleristCarRepository;
 import com.alihaydar.repository.GalleristRepository;
 import com.alihaydar.service.IGalleristCarService;
 
+
+@Service
 public class GalleristCarServiceImpl implements IGalleristCarService{
 
 	@Autowired
