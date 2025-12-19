@@ -5,6 +5,7 @@ import java.util.Date;
 
 import org.springframework.format.annotation.DateTimeFormat;
 
+import com.alihaydar.enums.CarStatusType;
 import com.alihaydar.enums.CurrencyType;
 
 import jakarta.persistence.Column;
@@ -44,6 +45,7 @@ public class Car extends BaseEntity{
 	private BigDecimal damagePrice;
 	
 	@Column(name = "car_status")
-	private Boolean carStatusType;
+	@Enumerated(EnumType.STRING)
+	private CarStatusType carStatusType;
 	
 }
